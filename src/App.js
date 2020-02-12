@@ -1,21 +1,24 @@
 import React from "react";
 import { Layout } from "antd";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+//components
+import TopMenu from "./Components/TopMenu";
 //Views
-import Home from "./views/Home/Home";
-import NewMovie from "./views/NewMovie/NewMovie";
-import PopularMovies from "./views/PopularMovies/PopularMovies";
-import SearchMovies from "./views/SearchMovies/SearchMovies";
-import Movie from "./views/Movie/Movie";
-import Error404 from "./views/Error404/Error404";
+import Home from "./views/Home";
+import NewMovie from "./views/NewMovie";
+import PopularMovies from "./views/PopularMovies";
+import SearchMovies from "./views/SearchMovies";
+import Movie from "./views/Movie";
+import Error404 from "./views/Error404";
 
 export default function App() {
   const { Header, Content } = Layout;
   return (
     <Layout>
       <Router>
-        <Header>header</Header>
+        <Header>
+          <TopMenu />
+        </Header>
         <Content>
           <Switch>
             <Route path="/" exact={true} component={Home} />
