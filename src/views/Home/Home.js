@@ -1,9 +1,18 @@
-import React from "react";
+import React, { Fragment } from "react";
+import useFetch from "../../util/hooks/useFetch";
+import SliderMovies from "./../../Components/SliderMovies";
+import { URL_API, TOKEN } from "./../../util/constants/constants";
 
 export default function Home() {
+  const movies = useFetch(
+    `${URL_API}/now_playing?api_key=${TOKEN}&language=es-CO&page=1`
+  );
+
+  console.log(typeof movies);
+
   return (
-    <div>
-      <p>home</p>
-    </div>
+    <Fragment>
+      <SliderMovies movies={movies} />
+    </Fragment>
   );
 }
