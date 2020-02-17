@@ -1,0 +1,18 @@
+.movie-render {
+  &__link {
+    h4:hover {
+      color: #1890ff !important;
+    }
+    span:hover {
+      border: 1px solid green;
+      transition: all 0.25s ease-in-out;
+      transform: scale(1.15);
+    }
+    .ant-list-item-meta {
+      align-items: center;
+    }
+    .ant-list-item-meta-title {
+      margin: 0;
+    }
+  }
+}

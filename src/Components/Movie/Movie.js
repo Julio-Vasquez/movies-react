@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
+import { BG } from "./../../util/constants/constants";
 
 import "./Movie.scss";
 
@@ -12,7 +13,7 @@ export default function Movie(props) {
     <div
       className="movie"
       style={{
-        backgroundImage: `url(https://image.tmdb.org/t/p/original${backdrop_path})`
+        backgroundImage: `url(${BG}${backdrop_path})`
       }}
     >
       <div className="movie-info">
