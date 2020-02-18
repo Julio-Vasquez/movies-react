@@ -3,6 +3,7 @@ import { Layout } from "antd";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //components
 import TopMenu from "./Components/TopMenu";
+import Footer from ".//Components/Footer";
 //Views
 import Home from "./views/Home";
 import NewMovie from "./views/NewMovie";
@@ -16,7 +17,7 @@ export default function App() {
   return (
     <Layout>
       <Router>
-        <Header>
+        <Header style={{ zIndex: 1 }}>
           <TopMenu />
         </Header>
         <Content>
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="*" component={Error404} />
           </Switch>
         </Content>
+        <Footer />
       </Router>
     </Layout>
   );

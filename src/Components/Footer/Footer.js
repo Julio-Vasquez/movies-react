@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout } from "antd";
+import { Layout, Icon } from "antd";
 
 import "./Footer.scss";
 
@@ -11,6 +11,14 @@ export default function Footer() {
         Copyright ©{new Date().getFullYear()} All Rights Reserved : Julio
         Vásquez
       </p>
+
+      <a
+        href="https://github.com/DarKPhuRioN"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon type="github" />
+      </a>
     </Footer>
   );
 }
