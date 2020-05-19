@@ -13,7 +13,7 @@ export default function MovieCard(props) {
     <Link to={`/movie/${id}`}>
       <Card
         hoverable
-        style={{ width: 245 }}
+        style={{ width: 240 }}
         cover={
           <img
             src={`https://image.tmdb.org/t/p/original/${poster_path}`}
