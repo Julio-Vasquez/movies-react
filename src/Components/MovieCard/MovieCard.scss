@@ -1,0 +1,15 @@
+.ant-card-cover {
+  img {
+    height: 350px !important;
+  }
+}
+.ant-card:hover {
+  box-shadow: 2px 2px 5px 1px #accff0 !important;
+}
+.ant-card-meta-title {
+  text-align: center !important;
+  font-weight: bold !important;
+  &:hover {
+    color: #1890ff !important;
+  }
+}
